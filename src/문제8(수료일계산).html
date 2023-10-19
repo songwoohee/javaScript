@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D-DAY</title>
+  <!--  날짜 간격 계산하기 
+- 24(시간) X 60(분) X 60(초) X 1000(밀리초)
+- remainTime = parseInt(remainTime/(1000*60*60*24));
+- 현재 시간 기준으로 수료일 계산하기
+ -->
+ <style>
+  #container {
+    margin: 50px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px double #222;
+    background-color: #d8f0fc;
+    text-align: center;
+  }
+  h1 {
+    margin-top: 80px;
+  }
+  #result {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: rgb(243, 84, 84);
+  }
+ </style>
+</head>
+<body>
+  <div id="container">
+    <h1>학원 수료</h1>
+    <p><span id="result"></span>일 남았습니다. 힘내세요 :D</p>
+  </div>
+  
+  <script src="../src/문제8(수료일계산).js"></script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>backgroundColor</title>
+  <style>
+    	* {
+	    margin: 0;
+	    padding: 0;
+	}
+    #container {
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+    }
+    #box {
+      width: 150px;
+      height: 50px;
+      margin: 10px auto;
+      border: 1px solid #fff;
+      display: flex;
+	    justify-content: center;
+	    align-items: center;
+    }
+    .green {
+      background-color: green;
+      color: white;
+      font-weight: bold;
+    }
+    .orange {
+      background-color: orange;
+      color: white;
+      font-weight: bold;
+    }
+    .purple {
+      background-color: purple;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+  
+</head>
+<body>
+  <div id="container">
+    <button id="box" class="green" onclick="changeColor('green')">Green</button>
+    <button id="box" class="orange" onclick="changeColor('orange')">Orange</button>
+    <button id="box" class="purple" onclick="changeColor('purple')">Purple</button>
+   </div>
+<script>
+  function changeColor(color) {
+    document.body.style.backgroundColor = color;
+  }
+</script>
+</body>
+</html>
