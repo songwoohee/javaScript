@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>button</title>
+  <!-- <style>
+    a:link, a:visited {
+      color: white;
+      text-decoration: none;
+    }
+    ul{
+      list-style: none;
+      width: 500px;
+      margin: 10px auto;
+      padding: 0;
+    }
+    li {
+      display: inline-block;
+      width: 120px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      font-size: 15px;
+      text-align: center;
+    }
+    .green {
+      background-color: green;
+      color: white;
+      font-weight: bold;
+      box-shadow: none;
+    }
+    .orange {
+      background-color: orange;
+      color: white;
+      font-weight: bold;
+    }
+    .purple {
+      background-color: purple;
+      color: white;
+      font-weight: bold;
+    }
+  </style> -->
+  <style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    #container {
+        display: flex;
+        width: 500px;
+        margin: 10px auto;
+    }
+    .btn {
+        margin: 2px;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        border: 1px solid #ccc;
+        padding: 10px 16px;
+        color: white;
+        border-radius: 2px;
+    }
+    .green {
+        background-color: green;
+    }
+    .orange {
+        background-color: orange;
+    }
+    .purple {
+        background-color: purple;
+    }
+    #colorbox{
+        width: 500px;
+        height: 300px;
+        border: 2px solid #ccc;
+        border-radius: 15px;
+        margin: 10px auto;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- <ul>
+    <li class="green"><a href="#" onclick="alert('버튼을 눌렀습니다.')">Green</a></li>
+    <li class="orange"><a href="#" onclick="alert('버튼을 눌렀습니다.')">Orange</a></li>
+    <li class="purple"><a href="#" onclick="alert('버튼을 눌렀습니다.')">Purple</a></li>
+  </ul> -->
+  <div id="container">
+    <div class="btn green" onclick="changeBG('green')">Green</div>
+    <div class="btn orange" onclick="changeBG('orange')">Orange</div>
+    <div class="btn purple" onclick="changeBG('purple')">Purple</div>
+  </div>
+  <div id="colorbox"></div>
+  <script>
+    // const btns = document.querySelectorAll(".btn");
+    //for(let i = 0; i < btns.length; i++) {
+    //    btns[i].addEventListener("click", function() {
+    //        alert(`${this.textContent} 버튼이 눌러졌습니다. `)
+    //   });
+    // } 
+
+    function changeBG(color) { 
+        const rst = document.querySelector('#colorbox');
+        rst.style.backgroundColor = color;
+    }
+
+  </script>
+</body>
+</html>
